@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/style.min.css" />
+  <link rel="stylesheet" href="../global/common.min.css">
+  <title>Home</title>
+</head>
+<body>
+  <nav id="nav-bar">
+    <div class="container">
+      <div class="left">
+        <div class="logo-box">
+          <img src="../images/logo.webp"/>
+        </div>
+        <div class="search-box">
+          <span class="icon fas fa-search"></span>
+          <input type="text" placeholder="Search"/>
+        </div>
+        <ul class="list nav-list">
+          <li class="nav-list__item">
+            <a class="link" href="home.html">Home</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="link" href="#">Listing <span class="fas fa-angle-down"></span></a>
+            <ul class="list sub-list">
+              <li class="sub-list__item">
+                <a class="link" href="#">Listing</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="link" href="#">Listing Details</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-list__item">
+            <a class="link" href="#">About</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="link" href="#">API</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <a class="link" id="sign-in" href="#">Sign In</a>
+        <a class="link btn-1" id="add-listing" href="#">Add Listing</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="mask"></div>
+    <div class="container">
+      <div class="content">
+        <h1 class="content__title">Listing made easy.</h1>
+        <p class="content__desc">Explore vacation rentals, bar & restaurants and experiences . Find amazing places to visit</p>
+        <form id="search-form" class="content__form">
+          <div class="input-box input-box-1">
+            <span class="placeholder">Name: </span>
+            <input type="text" placeholder="Ex: Pizza, Pasta" id="food-name"/>
+          </div>
+          <!-- <div class="input-box input-box-2">
+            <span class="placeholder">Cuisine: </span>
+            <input type="text" placeholder="Ex: Italin" id="cuisine"/>
+          </div> -->
+          <div class="button-box">
+            <span class="fas fa-search"></span>
+            <button class="btn-2" type="submit">Search</button>
+          </div>
+        </form>
+        <ul class="list" id="search-list">
+          <span class="text">Search for: </span>
+          <li class="list__item list__item--active" data-type="recipes" data-ph="Ex: Pizza, Pasta">
+            <span class="text">Recipes</span>
+          </li>
+          <li class="list__item" data-type="ingredients" data-ph="Ex: Apple">
+            <span class="text">Ingredients</span>
+          </li>
+          <li class="list__item" data-type="products" data-ph="Ex: Yogurt">
+            <span class="text">Grocery Products</span>
+          </li>
+          <li class="list__item" data-type="menuItems" data-ph="Ex: Snickers">
+            <span class="text">Menu Item</span>
+          </li>
+          <a href="#" class="list__item link" data-type="ingredients" data-ph="Ex: Pizza, Pasta">
+            Go To Advanced Search
+          </a>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Salad -->
+  <section id="salad-section">
+    <div class="container">
+      <h1 class="section__title">Salad</h1>
+      <div class="content">
+        <!-- <div class="content__item">
+          <div class="img-box">
+            <img src=""/>
+            <div class="mask"></div>
+            <a class="link" href="#">
+              Show More
+              <span class="fas fa-angle-right"></span>
+            </a>
+          </div>
+          <a class="link" href="#">
+            <h3 class="item-title">Pizza</h3>
+          </a>
+        </div>
+        <div class="content__item">
+          <div class="img-box">
+            <img src=""/>
+            <div class="mask"></div>
+            <a class="link" href="#">
+              Show More
+              <span class="fas fa-angle-right"></span>
+            </a>
+          </div>
+          <a class="link" href="#">
+            <h3 class="item-title">Pizza</h3>
+          </a>
+        </div>
+        <div class="content__item">
+          <div class="img-box">
+            <img src=""/>
+            <div class="mask"></div>
+            <a class="link" href="#">
+              Show More
+              <span class="fas fa-angle-right"></span>
+            </a>
+          </div>
+          <a class="link" href="#">
+            <h3 class="item-title">Pizza</h3>
+          </a>
+        </div>
+        <div class="content__item">
+          <div class="img-box">
+            <img src=""/>
+            <div class="mask"></div>
+            <a class="link" href="#">
+              Show More
+              <span class="fas fa-angle-right"></span>
+            </a>
+          </div>
+          <a class="link" href="#">
+            <h3 class="item-title">Pizza</h3>
+          </a>
+        </div>
+        <div class="content__item">
+          <div class="img-box">
+            <img src=""/>
+            <div class="mask"></div>
+            <a class="link" href="#">
+              Show More
+              <span class="fas fa-angle-right"></span>
+            </a>
+          </div>
+          <a class="link" href="#">
+            <h3 class="item-title">Pizza</h3>
+          </a>
+        </div>
+        <div class="content__item">
+          <div class="img-box">
+            <img src=""/>
+            <div class="mask"></div>
+            <a class="link" href="#">
+              Show More
+              <span class="fas fa-angle-right"></span>
+            </a>
+          </div>
+          <a class="link" href="#">
+            <h3 class="item-title">Pizza</h3>
+          </a>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyzed Section -->
+  <section id="analyzed-section">
+    <div class="container">
+      <h1 class="section__title">Recipe Instructions</h1>
+      <p class="section__desc">Learn How To Make It By Following The Steps</p>
+      <div class="content">
+        <div class="mask-box card card-1" data-num="632631">
+          <img class="card__img" src="../images/home-apple.jpg"/>
+          <div class="card__desc">
+            <h3 class="card__title">Apple</h3>
+          </div>
+        </div>
+        <div class="mask-box card card-2" data-num="654959">
+          <img class="card__img" src="../images/home-pasta.jpg"/>
+          <div class="card__desc">
+            <h3 class="card__title">Pasta</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, deserunt.</p>
+              <a class="btn-1 link" href="#">Read More</a>
+          </div>
+        </div>
+        <div class="mask-box card card-3" data-num="655847">
+          <img class="card__img" src="../images/home-pizza.jpg"/>
+          <div class="card__desc">
+            <h3 class="card__title">Pizza</h3>
+          </div>
+        </div>
+        <div class="mask-box card card-4" data-num="663252">
+          <img class="card__img" src="../images/home-burger.jpg"/>
+          <div class="card__desc">
+            <h3 class="card__title">Burger</h3>
+          </div>
+        </div>
+        <div class="mask-box card card-5" data-num="663108">
+          <img class="card__img" src="../images/home-fish.jpg"/>
+          <div class="card__desc">
+            <h3 class="card__title">Fish</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos Section -->
+  <section id="videos-section">
+    <div class="container">
+      <div class="section__header">
+        <h1 class="section__title">Food Videos</h1>
+        <p class="section__desc">Watch Videos And Learn How To Cook</p>
+        <span id="left-btn" class="fas fa-angle-left"></span>
+        <span id="right-btn" class="fas fa-angle-right"></span>
+      </div>
+      <div class="content">
+        <!--  -->
+        <div class="cards-box">
+          <!-- <div class="card">
+            <div class="mask-box card__img-box">
+              <img src="../images/home-pasta.jpg" class="vid-img"/>
+              <span class="vid-length">234</span>
+              <span class="love-btn fas fa-heart"></span>
+              <div class="rate-box">
+                <span class="rate">4.5</span> (
+                <span class="viewers">213</span> Viewers )
+              </div>
+            </div>
+            <h3 class="card__title">Lorem ipsum dolor sit.</h3>
+            <div class="card__link-box">
+              <a href="#" class="link">Go To YouTube</a>
+              <span class="copy-btn">
+                <span class="icon fas fa-clipboard"></span>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mask-box card__img-box">
+              <img src="../images/home-pasta.jpg" class="vid-img"/>
+              <span class="vid-length">234</span>
+              <span class="love-btn fas fa-heart"></span>
+              <div class="rate-box">
+                <span class="rate">4.5</span> (
+                <span class="viewers">213</span> Viewers )
+              </div>
+            </div>
+            <h3 class="card__title">Lorem ipsum dolor sit.</h3>
+            <div class="card__link-box">
+              <a href="#" class="link">Go To YouTube</a>
+              <span class="copy-btn">
+                <span class="icon fas fa-clipboard"></span>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mask-box card__img-box">
+              <img src="../images/home-pasta.jpg" class="vid-img"/>
+              <span class="vid-length">234</span>
+              <span class="love-btn fas fa-heart"></span>
+              <div class="rate-box">
+                <span class="rate">4.5</span> (
+                <span class="viewers">213</span> Viewers )
+              </div>
+            </div>
+            <h3 class="card__title">Lorem ipsum dolor sit.</h3>
+            <div class="card__link-box">
+              <a href="#" class="link">Go To YouTube</a>
+              <span class="copy-btn">
+                <span class="icon fas fa-clipboard"></span>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mask-box card__img-box">
+              <img src="../images/home-pasta.jpg" class="vid-img"/>
+              <span class="vid-length">234</span>
+              <span class="love-btn fas fa-heart"></span>
+              <div class="rate-box">
+                <span class="rate">4.5</span> (
+                <span class="viewers">213</span> Viewers )
+              </div>
+            </div>
+            <h3 class="card__title">Lorem ipsum dolor sit.</h3>
+            <div class="card__link-box">
+              <a href="#" class="link">Go To YouTube</a>
+              <span class="copy-btn">
+                <span class="icon fas fa-clipboard"></span>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mask-box card__img-box">
+              <img src="../images/home-pasta.jpg" class="vid-img"/>
+              <span class="vid-length">234</span>
+              <span class="love-btn fas fa-heart"></span>
+              <div class="rate-box">
+                <span class="rate">4.5</span> (
+                <span class="viewers">213</span> Viewers )
+              </div>
+            </div>
+            <h3 class="card__title">Lorem ipsum dolor sit.</h3>
+            <div class="card__link-box">
+              <a href="#" class="link">Go To YouTube</a>
+              <span class="copy-btn">
+                <span class="icon fas fa-clipboard"></span>
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="mask-box card__img-box">
+              <img src="../images/home-pasta.jpg" class="vid-img"/>
+              <span class="vid-length">234</span>
+              <span class="love-btn fas fa-heart"></span>
+              <div class="rate-box">
+                <span class="rate">4.5</span> (
+                <span class="viewers">213</span> Viewers )
+              </div>
+            </div>
+            <h3 class="card__title">Lorem ipsum dolor sit.</h3>
+            <div class="card__link-box">
+              <a href="#" class="link">Go To YouTube</a>
+              <span class="copy-btn">
+                <span class="icon fas fa-clipboard"></span>
+              </span>
+            </div>
+          </div> -->
+        </div>
+        <!--  -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Random Joke -->
+  <section id="random-joke">
+    <div class="container">
+      <h2>Random Food Joke</h2>
+      <!-- <p id="joke">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas repudiandae assumenda rerum vero iste deserunt eaque, ad inventore sed ea.</p> -->
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services-section">
+    <div class="container">
+      <h1 class="section__title">Services</h1>
+      <div class="content">
+        <!-- Service 1 -->
+        <div class="service service-1">
+          <img class="service__img" src="../images/home-pizza.jpg">
+          <h2 class="service__title">Lorem ipsum.</h2>
+          <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptatibus neque hic eveniet eligendi corporis, omnis aut, repudiandae temporibus soluta.</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="service service-2">
+          <img class="service__img" src="../images/home-pizza.jpg">
+          <h2 class="service__title">Lorem ipsum.</h2>
+          <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptatibus neque hic eveniet eligendi corporis, omnis aut, repudiandae temporibus soluta.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="service service-3">
+          <img class="service__img" src="../images/home-pizza.jpg">
+          <h2 class="service__title">Lorem ipsum.</h2>
+          <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem voluptatibus neque hic eveniet eligendi corporis, omnis aut, repudiandae temporibus soluta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="col col-1">
+        <img src="../images/logo.webp"/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, quas sit explicabo tempora ex distinctio cum corporis maiores saepe vitae.</p>
+      </div>
+      <div class="col col-2">
+        <h3>title</h3>
+        <ul class="list">
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="col col-3">
+        <h3>title</h3>
+        <ul class="list">
+          <li>Care</li>
+          <li>Treatment</li>
+          <li>Training</li>
+          <li>Hygienic Care</li>
+        </ul>
+      </div>
+      <div class="col col-4"></div>
+    </div>
+  </footer>
+
+  <!-- Java Script -->
+  <script src="../global/app.js"></script>
+  <script src="./javascript/main.js"></script>
+</body>
+</html>

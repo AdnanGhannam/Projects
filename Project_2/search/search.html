@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../global/common.min.css">
+  <link rel="stylesheet" href="./styles/style.min.css" />
+  <title>Search</title>
+</head>
+<body>
+  <nav id="nav-bar">
+    <div class="container">
+      <div class="left">
+        <div class="logo-box">
+          <img src="../images/logo.webp"/>
+        </div>
+        <div class="search-box">
+          <span class="icon fas fa-search"></span>
+          <input type="text" placeholder="Search"/>
+        </div>
+        <ul class="list nav-list">
+          <li class="nav-list__item">
+            <a class="link" href="home.html">Home</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="link" href="#">Listing <span class="fas fa-angle-down"></span></a>
+            <ul class="list sub-list">
+              <li class="sub-list__item">
+                <a class="link" href="#">Listing</a>
+              </li>
+              <li class="sub-list__item">
+                <a class="link" href="#">Listing Details</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-list__item">
+            <a class="link" href="#">About</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="link" href="#">API</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <a class="link" id="sign-in" href="#">Sign In</a>
+        <a class="link btn-1" id="add-listing" href="#">Add Listing</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="">
+    <div class="mask"></div>
+    <h1 class="title">Search Results</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="side-bar">
+        <form id="search-form">
+          <div class="query-input">
+            <label>Food: </label>
+            <input id="query" placeholder="Ex: Pizza" required/>
+          </div>
+          <div class="select-list select-list-1">
+            <span class="text">Choose...</span>
+            <span class="icon fas fa-angle-down"></span>
+            <ul class="list">
+              <li>African</li>
+              <li>American</li>
+              <li>British</li>
+              <li>Cajun</li>
+              <li>Caribbean</li>
+              <li>Chinese</li>
+              <li>Eastern European</li>
+              <li>European</li>
+              <li>French</li>
+              <li>German</li>
+              <li>Greek</li>
+              <li>Indian</li>
+              <li>Irish</li>
+              <li>Italian</li>
+              <li>Japanese</li>
+              <li>Jewish</li>
+              <li>Korean</li>
+              <li>Latin American</li>
+              <li>Mediterranean</li>
+              <li>Mexican</li>
+              <li>Middle Eastern</li>
+              <li>Nordic</li>
+              <li>Southern</li>
+              <li>Spanish</li>
+              <li>Thai</li>
+              <li>Vietnamese</li>
+            </ul>
+          </div>
+          <div class="select-list select-list-2">
+            <span class="text">Choose...</span>
+            <span class="icon fas fa-angle-down"></span>
+            <ul class="list">
+              <li>Gluten Free</li>
+              <li>Ketogenic</li>
+              <li>Vegetarian</li>
+              <li>Lacto-Vegetarian</li>
+              <li>Ovo-Vegetarian</li>
+              <li>Vegan</li>
+              <li>Pescetarian</li>
+              <li>Paleo</li>
+              <li>Primal</li>
+              <li>Whole30</li>
+            </ul>
+          </div>
+          <div class="select-list select-list-3">
+            <span class="text">Choose...</span>
+            <span class="icon fas fa-angle-down"></span>
+            <ul class="list">
+              <li>African</li>
+              <li>American</li>
+              <li>British</li>
+              <li>Cajun</li>
+              <li>Caribbean</li>
+              <li>Chinese</li>
+              <li>Eastern European</li>
+              <li>European</li>
+              <li>French</li>
+              <li>German</li>
+              <li>Greek</li>
+              <li>Indian</li>
+              <li>Irish</li>
+              <li>Italian</li>
+              <li>Japanese</li>
+              <li>Jewish</li>
+              <li>Korean</li>
+              <li>Latin American</li>
+              <li>Mediterranean</li>
+              <li>Mexican</li>
+              <li>Middle Eastern</li>
+              <li>Nordic</li>
+              <li>Southern</li>
+              <li>Spanish</li>
+              <li>Thai</li>
+              <li>Vietnamese</li>
+            </ul>
+          </div>
+          <div class="number-box">
+            <input id="max-carbs" type="text" class="number" placeholder="Max Carbs"/>
+            <span class="arrow arrow-1 fas fa-angle-up"></span>
+            <span class="arrow arrow-2 fas fa-angle-down"></span>
+          </div>
+          <div class="number-box">
+            <input id="max-protein" type="text" class="number" placeholder="Max Protein"/>
+            <span class="arrow arrow-1 fas fa-angle-up"></span>
+            <span class="arrow arrow-2 fas fa-angle-down"></span>
+          </div>
+          <div class="number-box">
+            <input id="max-calories" type="text" class="number" placeholder="Max Calories"/>
+            <span class="arrow arrow-1 fas fa-angle-up"></span>
+            <span class="arrow arrow-2 fas fa-angle-down"></span>
+          </div>
+          <div class="number-box">
+            <input id="max-fat" type="text" class="number" placeholder="Max Fat"/>
+            <span class="arrow arrow-1 fas fa-angle-up"></span>
+            <span class="arrow arrow-2 fas fa-angle-down"></span>
+          </div>
+          <div class="number-box">
+            <input id="max-iron" type="text" class="number" placeholder="Max Iron"/>
+            <span class="arrow arrow-1 fas fa-angle-up"></span>
+            <span class="arrow arrow-2 fas fa-angle-down"></span>
+          </div>
+          <div class="number-box">
+            <input id="max-magnesium" type="text" class="number" placeholder="Max Magnesium"/>
+            <span class="arrow arrow-1 fas fa-angle-up"></span>
+            <span class="arrow arrow-2 fas fa-angle-down"></span>
+          </div>
+
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <!--  -->
+      <div class="content">
+        <h2 class="content__title">
+          <span id="number">12</span> Results
+        </h2>
+        <div class="results-box">
+          <!--  -->
+          <div class="card">
+            <div class="card__img-box">
+              <img class="card__img" src="../images/header-img.jpg"/>
+            </div>
+            <div class="card__title-box">
+              <h3 class="card__title">Title1 </h3>
+            </div>
+            <div class="info-button">
+              <span class="fas fa-info"></span>
+            </div>
+            <div class="info-box">
+              <p><strong>Protine: </strong>1234g</p>
+              <p><strong>Protine: </strong>1234g</p>
+              <p><strong>Protine: </strong>1234g</p>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="container">
+      <div class="col col-1">
+        <img src="../images/logo.webp"/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, quas sit explicabo tempora ex distinctio cum corporis maiores saepe vitae.</p>
+      </div>
+      <div class="col col-2">
+        <h3>title</h3>
+        <ul class="list">
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="col col-3">
+        <h3>title</h3>
+        <ul class="list">
+          <li>Care</li>
+          <li>Treatment</li>
+          <li>Training</li>
+          <li>Hygienic Care</li>
+        </ul>
+      </div>
+      <div class="col col-4"></div>
+    </div>
+  </footer>
+
+  <!-- Java Script -->
+  <script src="../global/app.js"></script>
+  <script src="./javascript/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+https://preview.colorlib.com/theme/gricklo/index.html
+https://spoonacular.com/food-api/docs
+https://www.epicurious.com/
+http://youtube.com/watch?v=
+
+Search Recipes by Ingredients
+Search Recipes by Nutrients
+Get Recipe Information
+Get Similar Recipes
+Get Random Recipes
+~Recipe Taste by ID
+Get Recipe Price Breakdown by ID, Recipe Ingredients by ID
+Get Recipe Nutrition Widget by ID
+Get Analyzed Recipe Instructions
+Summarize Recipe
+
+Ingredient Search
+Get Ingredient Information
+Autocomplete Ingredient Search
+
+~Search Grocery Products
+Autocomplete Product Search
+Get Product Information
+
+Autocomplete Menu Item Search
+Get Menu Item Information
+
+Search All Food
+
+
+Section-1: get("https://api.spoonacular.com/recipes/complexSearch?query=salad&apiKey=8f1e74b58b4a45bd8765fafb9337a781");
+
+
+// // const data1 = get("https://api.spoonacular.com/food/ingredients/search?query=meat&number=5&apiKey=8f1e74b58b4a45bd8765fafb9337a781");
+// // const data1 = get("https://api.spoonacular.com/recipes/random?number=1&tags=vegetarian,dessert&apiKey=8f1e74b58b4a45bd8765fafb9337a781");
+// // const data1 = get("https://api.spoonacular.com/recipes/complexSearch?query=pas&number=2&apiKey=8f1e74b58b4a45bd8765fafb9337a781");
+// // const data1 = get("https://api.spoonacular.com/recipes/complexSearch?query=salad&apiKey=8f1e74b58b4a45bd8765fafb9337a781");
+// // const data1 = get("https://api.spoonacular.com/recipes/715538/analyzedInstructions?apiKey=8f1e74b58b4a45bd8765fafb9337a781");
+// const data1 = get("https://api.spoonacular.com/recipes/complexSearch?query=fish&number=10&apiKey=8f1e74b58b4a45bd8765fafb9337a781");
+// const data1 = get("https://api.spoonacular.com/recipes/findByNutrients?mincarbs=10&maxcarbs=50&number=2&apiKey=8f1e74b58b4a45bd8765fafb9337a781");
+// data1.then((r) => console.log(r));
+
+
+query
+cuisine
+diet
+excludeIngredients
+maxCarbs
+maxProtein
+maxCalories
+maxFat
+maxIron
+maxMagnesium
+number
+
+
+
+
+
+//

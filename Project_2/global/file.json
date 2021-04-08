@@ -1,0 +1,22 @@
+{
+  "(Listing Page, Home-Section-1: salad)search recipes, Search Recipes by Nutrients": ["id", "title", "cal", "carb", "fat", "img", "protein", "conditions(min, max)"],
+  "(Advanced Search Results Page, More Infomation Page) Get Recipe Information": "Full Information",
+  "(Home-Section-3)Search Food Videos": ["title", "length", "rating", "shortTitle", "thumbnail", "views", "youTubeId"],
+  "(All Pages /wout Home)Get Similar Recipes": ["id", "title", "sourceUrl", "~img"],
+  "#(Instructions Page, Home-Section-2: Brief || Link To)Get Analyzed Recipe Instructions By Id": ".....",
+  "#(Instructions Page)Get Recipe Ingredients by ID": {
+    "ingredients": ["name", "amount"]
+  },
+  "(Section-5) Random Food Joke": "text",
+  "(Any Page: Home, Info)Get Recipe Nutrition Widget by ID": "grid",
+  "(Any Page: Home, Info)Get Recipe Taste by ID": ["sweetness", "saltiness", "sourness", "bitterness", "savoriness", "fattiness", "spiciness"],
+  "~Summarize Recipe": ["id", "summary", "title"],
+  "~~(Search Results Page)Autocomplete Recipe Search": ["id", "title", "~img", "&number"],
+  "~Get Recipe Price Breakdown by ID": "",
+  "~~Search Recipes by Ingredients": [
+    "id",
+    "img",
+    "missedIngredientCount",
+    { "missedIngredient": ["id", "name", "img"] }
+  ]
+}

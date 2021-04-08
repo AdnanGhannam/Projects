@@ -1,0 +1,185 @@
+@import "../../global/custom";
+
+header {
+  @extend %bg-img;
+  position: relative;
+  background-image: url("../../images/header-img.jpg");
+  min-height: 55vh;
+
+  .title {
+    color: getColor("white");
+    line-height: 55vh;
+    text-align: center;
+    position: relative;
+    font-size: 2.6rem;
+    z-index: 10;
+  }
+}
+
+main {
+  padding: $sectionPadding 0;
+  .container {
+    @include container(1170px);
+    @include grid(30% 70%, 1fr, 100px);
+  }
+
+  .side-bar {
+    border: 1px solid getColor("light-gray");
+
+    #search-form {
+      @include flex(flex-start, center, column);
+      padding: 2em 0;
+
+      > div {
+        margin: 15px 0;
+        border-radius: 3px;
+        border: 1px solid getColor("light-gray");
+        padding: .7em 1.1em;
+        width: 260px;
+
+        &.query-input {
+
+          #query {
+            @extend %input;
+            margin-left: 5px;
+          }
+        }
+
+        &.select-list {
+          @include flex(space-between);
+          position: relative;
+          cursor: pointer;
+          perspective: 100px;
+          transform-style: preserve-3d;
+          z-index: 1;
+
+          @for $i from 1 through 3 {
+            &-#{$i} {
+              z-index: round(5 / $i);
+            }
+          }
+
+          .list {
+            @include abs(0px, 110%);
+            background-color: getColor("white");
+            z-index: 10;
+            border: 1px solid getColor("light-gray");
+            width: 100%;
+            max-height: 180px;
+            overflow-y: auto;
+            opacity: 0;
+            visibility: hidden;
+            transform-origin: 90% 0%;
+            transform: scale(.8, .2);
+            transition: all .3s cubic-bezier(.68, -.25, .265, 1.25);
+
+            &.visible {
+              opacity: 1;
+              visibility: visible;
+              transform: scale(1);
+            }
+
+            li {
+              padding: .6em .8em;
+              transition: all .5s ease;
+
+              &:hover {
+                background-color: getColor("main-blue");
+                color: getColor("white");
+              }
+            }
+          }
+        }
+
+        &.number-box {
+          outline: none;
+          position: relative;
+          white-space: nowrap;
+          padding-right: 20px;
+
+          input {
+            @extend %input;
+          }
+
+          .arrow {
+            @include abs(auto, 6px, 20px);
+            cursor: pointer;
+
+            &-2 {
+              top: auto;
+              bottom: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    .results-box {
+      @include grid(repeat(2, 40%), 1fr, 30px);
+
+      .card {
+        cursor: pointer;
+        margin: 30px 0;
+        box-shadow: 10px 20px 20px getColor("light-gray"),
+                    10px 40px 40px getColor("alpha-white");
+        border-radius: 11px;
+        overflow: hidden;
+        position: relative;
+        background-color: getColor("white");
+        color: getColor("third-blue");
+        transition: all .3s;
+
+        &__img-box {
+          height: 230px;
+        }
+
+        &:hover {
+          box-shadow: 0 10px 10px getColor("light-gray"),
+                      0 20px 20px getColor("alpha-white");
+        }
+
+        &__img {
+          @extend %covered-img;
+        }
+
+        &__title-box {
+          padding: 0 2em;
+          max-width: 80%;
+        }
+
+        .info-button {
+          @include abs(calc(100% - 50px), calc(100% - 50px));
+          width: 40px;
+          height: 40px;
+          font-size: .8rem;
+          z-index: 20;
+          pointer-events: none;
+          border-radius: 50%;
+
+          span {
+            @include abs(50%, 50%, auto, auto, -50%, -50%);
+          }
+        }
+
+        .info-box {
+          @include abs(0px, 0px);
+          width: 100%;
+          height: 100%;
+          background-color: getColor("white");
+          z-index: 10;
+          padding: 1em 2em;
+          border-radius: inherit;
+          clip-path: circle(20px at calc(100% - 30px) calc(100% - 30px));
+          transition: all .7s ease;
+
+          &:hover {
+            clip-path: circle(100%);
+            background-color: getColor("white");
+          }
+        }
+      }
+    }
+  }
+}

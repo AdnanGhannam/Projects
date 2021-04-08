@@ -1,0 +1,23 @@
+@mixin mScreen {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin smallScreen() {
+  @media (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin iPad() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phone() {
+  @media (max-width: 1170px) {
+    @content;
+  }
+}
